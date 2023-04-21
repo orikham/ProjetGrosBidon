@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-20T14:00:28.451Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ooTAYe2P98mp2Ljls3dY" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-21T11:50:49.300Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="pFOzBa9r6Coc0Qo1t-DO" version="21.1.8" type="github">
   <diagram name="Page-1" id="CrCrczFXpA4y9oFddKT8">
-    <mxGraphModel dx="2739" dy="2101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2312" dy="1937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,35 +127,8 @@
         <mxCell id="iLVmoU_oaUdtIROkRU-8-40" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;MCD&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1" y="-1080" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-9" value="volaille" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="70" y="750" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-10" value="boeufs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="70" y="765" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-11" value="porc" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="70" y="780" width="50" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-12" value="végetrarien" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="80" y="810" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="MSxB_DBe48HfQOGkw4bF-23" value="entrées&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="80" y="850" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="MSxB_DBe48HfQOGkw4bF-24" value="plat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="80" y="880" width="40" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="MSxB_DBe48HfQOGkw4bF-25" value="dessert" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="80" y="920" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="MSxB_DBe48HfQOGkw4bF-26" value="menus a theme" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="70" y="960" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-8" value="amuse bouche" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="70" y="1000" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iLVmoU_oaUdtIROkRU-8-13" value="hallal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="70" y="1040" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iLVmoU_oaUdtIROkRU-8-79" value="user" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
           <mxGeometry y="-1000" width="200" height="200" as="geometry">
