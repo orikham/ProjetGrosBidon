@@ -9,5 +9,12 @@ return array(
     'AltoRouter' => $vendorDir . '/altorouter/altorouter/AltoRouter.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'ConnexionDb' => $baseDir . '/model/ConnexionDb.php',
-    'NewUser' => $baseDir . '/model/NewUser.php',
+    'Controller' => $baseDir . '/controller/Controller.php',
+    'HomeController' => $baseDir . '/controller/HomeController.php',
+    'InscriptionSite' => $baseDir . '/model/InscriptionSite.php',
+    'NewUser' => $baseDir . '/class/NewUser.php',
+    'Session' => $baseDir . '/model/Session.php',
+    'SessionController' => $baseDir . '/controller/SessionController.php',
+    'SessionManager' => $baseDir . '/model/Session.php',
+    'SessionView' => $baseDir . '/class/SessionV.php',
 );

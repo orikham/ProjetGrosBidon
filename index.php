@@ -6,12 +6,13 @@ require_once './vendor/altorouter/altorouter/AltoRouter.php';
 
 
 $router = new AltoRouter();
-$router->setBasePath('/php/Routeur');
+$router->setBasePath('/projet/projetGrosBidon');
 
-$router->map( 'GET', '/', 'PostController#homePage', 'home' );
+$router->map( 'GET', '/', 'HomeController#TemplateIndex', 'home' );
 
 
 $match = $router->match();
+
 
 
 if(is_array($match)){

@@ -1,0 +1,29 @@
+{% set style = '/projet/projetGrosBidon/CSS/' %}
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <title>{% block title %}Accueil-GrosBidon{% endblock %}</title>
+   <link rel="stylesheet" href="{{ style }}style.css">
+</head>
+<body>
+    {% block content %}
+    
+      <header id="header-gros-bidon">
+        <div id="container-header" class="row-limit-size"> 
+          <img src="./img/aTable.png" title="patatable">
+          <img src="./img/logoHeader.">
+          <h1> GrosBidon</h1>
+          <img src="./img/PatateCrue.png" title="patatable">
+        </div>
+      </header>
+
+      
+     
+    {% endblock %}
+</body>
+</html>

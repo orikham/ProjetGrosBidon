@@ -42,7 +42,14 @@ class ComposerStaticInit1e25deae21db4b1d20de71f10bedfaf2
         'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'ConnexionDb' => __DIR__ . '/../..' . '/model/ConnexionDb.php',
-        'NewUser' => __DIR__ . '/../..' . '/model/NewUser.php',
+        'Controller' => __DIR__ . '/../..' . '/controller/Controller.php',
+        'HomeController' => __DIR__ . '/../..' . '/controller/HomeController.php',
+        'InscriptionSite' => __DIR__ . '/../..' . '/model/InscriptionSite.php',
+        'NewUser' => __DIR__ . '/../..' . '/class/NewUser.php',
+        'Session' => __DIR__ . '/../..' . '/model/Session.php',
+        'SessionController' => __DIR__ . '/../..' . '/controller/SessionController.php',
+        'SessionManager' => __DIR__ . '/../..' . '/model/Session.php',
+        'SessionView' => __DIR__ . '/../..' . '/class/SessionV.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", sans-serif;
+  background-image: url(../img/imageFondGrosBidon.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.row-limit-size {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Ultra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffe5a2;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffebb7;
+}
+@media screen and (min-width: 950px) {
+  h2 {
+    font-size: 44px;
+    line-height: 100%;
+  }
+}
+
+h3 {
+  font-family: "Ultra", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 124%;
+  color: #ffebb7;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffebb7;
+}
+@media screen and (min-width: 950px) {
+  h4 {
+    font-size: 72px;
+    line-height: 80px;
+  }
+}
+
+/**********header**********/
+.row-limit-size {
+  width: 100%;
+}
+.row-limit-size > #header-gros-bidon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.row-limit-size > #header-gros-bidon > #container-logo {
+  width: 100%;
+  position: relative;
+}
+.row-limit-size > #header-gros-bidon > #container-logo > img {
+  position: relative;
+}
+.row-limit-size > #header-gros-bidon > #container-logo > h1 {
+  position: absolute;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

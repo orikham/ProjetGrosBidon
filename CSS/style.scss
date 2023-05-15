@@ -1,0 +1,117 @@
+$creamColor: #ffe5a2;
+$bg-blue: #243763;
+$bg-orange: #ff6e31;
+$a-color: #ffe5a5;
+$bg-orange: #e8652e;
+$title-color: #ffebb7;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "PT Serif", sans-serif;
+    background-image: url(../img/imageFondGrosBidon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: "Ultra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $creamColor;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: $title-color;
+
+    @media screen and (min-width: 950px) {
+        font-size: 44px;
+        line-height: 100%;
+    }
+}
+
+h3 {
+    font-family: "Ultra", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 124%;
+    color: $title-color;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title-color;
+
+    @media screen and (min-width: 950px) {
+        font-size: 72px;
+        line-height: 80px;
+    }
+}
+
+
+
+
+
+/**********header**********/
+
+.row-limit-size {
+    width: 100%;
+
+    &>#header-gros-bidon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &>#container-logo {
+            width: 100%;
+            position: relative;
+
+            &>img {
+                position: relative;
+            }
+
+            &>h1 {
+                position: absolute;
+                left: 0;
+
+
+            }
+        }
+    }
+
+}
