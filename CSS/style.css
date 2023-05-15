@@ -6,7 +6,7 @@
 
 body {
   font-family: "PT Serif", sans-serif;
-  background-image: url(../img/imageFondGrosBidon.jpg);
+  background-image: url(../img/fond1.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -28,7 +28,7 @@ ul {
 }
 
 h1 {
-  font-family: "Ultra";
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
@@ -76,22 +76,12 @@ h4 {
 }
 
 /**********header**********/
-.row-limit-size {
+#header-gros-bidon {
+  max-width: 1200px;
   width: 100%;
 }
-.row-limit-size > #header-gros-bidon {
+#header-gros-bidon > #container-header {
   width: 100%;
   display: flex;
-  justify-content: center;
-}
-.row-limit-size > #header-gros-bidon > #container-logo {
-  width: 100%;
-  position: relative;
-}
-.row-limit-size > #header-gros-bidon > #container-logo > img {
-  position: relative;
-}
-.row-limit-size > #header-gros-bidon > #container-logo > h1 {
-  position: absolute;
-  left: 0;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
