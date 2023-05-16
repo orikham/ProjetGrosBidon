@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'Cookie Dough';
+    src: url(../font/Cookie\ Dough.otf);
+}
+
+@font-face {
+    font-family: 'Honey Cookies';
+    src: url(../font/Honey\ Cookies.ttf);
+}
+
+
+
+
 $creamColor: #ffe5a2;
 $bg-blue: #243763;
 $bg-orange: #ff6e31;
 $a-color: #ffe5a5;
 $bg-orange: #e8652e;
 $title-color: #ffebb7;
+$titleh1: #456b01;
 
 
 * {
@@ -27,7 +41,7 @@ a {
 }
 
 .row-limit-size {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
 
     margin: 0 auto;
@@ -38,50 +52,21 @@ ul {
 }
 
 h1 {
-    font-family: "Arial";
+    font-family: "Honey Cookies";
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: $creamColor;
+    color: $titleh1;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    color: $title-color;
 
-    @media screen and (min-width: 950px) {
-        font-size: 44px;
-        line-height: 100%;
-    }
-}
 
-h3 {
-    font-family: "Ultra", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 124%;
-    color: $title-color;
-}
 
-h4 {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $title-color;
 
-    @media screen and (min-width: 950px) {
-        font-size: 72px;
-        line-height: 80px;
-    }
-}
+
 
 
 
@@ -89,15 +74,73 @@ h4 {
 
 /**********header**********/
 
-#header-gros-bidon{
-    max-width: 1200px;
+#header-gros-bidon {
+    max-width: 1400px;
     width: 100%;
-    
+    display: flex;
 
-    &>#container-header{
+    margin: 0 auto;
 
-        width: 100%;
-        display: flex;
-        margin: 0 auto;
+
+
+    &>#container-header {
+
+        &>#banniere {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+
+            &> :nth-child(1),
+            :nth-child(3) {
+                width: 300px;
+                height: 200px;
+
+            }
+
+            &>#logo-header {
+                width: 700px;
+                height: 250px;
+
+                &>img {
+                    width: 700px;
+                    height: 250px;
+                    position: absolute;
+
+                }
+
+                &>h1 {
+                    width: 500px;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    transform: translate(100px, 150px);
+
+                }
+            }
+        }
+
+        &>#general-navigation {
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &>#nav-principal {
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            background-color: $creamColor ;
+
+        }
     }
+
+
 }

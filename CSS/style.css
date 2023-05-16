@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Cookie Dough";
+  src: url(../font/Cookie\ Dough.otf);
+}
+@font-face {
+  font-family: "Honey Cookies";
+  src: url(../font/Honey\ Cookies.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +26,7 @@ a {
 }
 
 .row-limit-size {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
@@ -28,60 +36,63 @@ ul {
 }
 
 h1 {
-  font-family: "Arial";
+  font-family: "Honey Cookies";
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: #ffe5a2;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffebb7;
-}
-@media screen and (min-width: 950px) {
-  h2 {
-    font-size: 44px;
-    line-height: 100%;
-  }
-}
-
-h3 {
-  font-family: "Ultra", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 124%;
-  color: #ffebb7;
-}
-
-h4 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 44px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffebb7;
-}
-@media screen and (min-width: 950px) {
-  h4 {
-    font-size: 72px;
-    line-height: 80px;
-  }
+  color: #456b01;
 }
 
 /**********header**********/
 #header-gros-bidon {
-  max-width: 1200px;
-  width: 100%;
-}
-#header-gros-bidon > #container-header {
+  max-width: 1400px;
   width: 100%;
   display: flex;
   margin: 0 auto;
+}
+#header-gros-bidon > #container-header > #banniere {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#header-gros-bidon > #container-header > #banniere > :nth-child(1),
+#header-gros-bidon > #container-header > #banniere :nth-child(3) {
+  width: 300px;
+  height: 200px;
+}
+#header-gros-bidon > #container-header > #banniere > #logo-header {
+  width: 700px;
+  height: 250px;
+}
+#header-gros-bidon > #container-header > #banniere > #logo-header > img {
+  width: 700px;
+  height: 250px;
+  position: absolute;
+}
+#header-gros-bidon > #container-header > #banniere > #logo-header > h1 {
+  width: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(100px, 150px);
+}
+#header-gros-bidon > #container-header > #general-navigation {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header-gros-bidon > #container-header > #nav-principal {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #ffe5a2;
 }/*# sourceMappingURL=style.css.map */
