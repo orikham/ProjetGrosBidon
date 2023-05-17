@@ -87,6 +87,11 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
 }
+#header-gros-bidon > #container-header > #general-navigation > #icones-menus-usercompte > #menu-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
 #header-gros-bidon > #container-header > #nav-principal {
   max-width: 700px;
   width: 100%;
@@ -95,4 +100,21 @@ h1 {
   justify-content: space-evenly;
   margin: 0 auto;
   background-color: #ffe5a2;
+  visibility: hidden;
+}
+
+/**************partie mon compte***************/
+/*****formulaire d'inscription*****/
+#acces-mon-compte {
+  width: 100%;
+  display: flex;
+}
+#acces-mon-compte > form {
+  max-width: 500px;
+  width: 100%;
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  box-shadow: 2px 2px 10px #666;
 }/*# sourceMappingURL=style.css.map */

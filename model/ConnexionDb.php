@@ -13,6 +13,7 @@ abstract class ConnexionDb{
         }
     }
 
+
     protected function getDb()
     {
         if (self::$dbgrosbidon == null) {

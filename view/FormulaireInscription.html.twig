@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrosBidon/inscription-connexion</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <section id="access-mon-compte" class="row-limit-size">
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Inscription</legend>
+            <div>
+                <label for="pseudo">Pseudonyme</label>
+                <input type="text" name="pseudo" id="pseudo">
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="mail">Votre mail</label>
+                <input type="E-mail" name="mail" id="mail">
+            </div>
+            <div>
+                <label for="birthdate">date de naissance</label>
+                <input type="date" name="biethdate" id="birthdate">
+            </div>
+       
+            
+            <input type="submit" name="submit" value="inscription">
+        </fieldset>
+    </form>
+
+    <?php
+    if (!isset($_SESSION['session'])) {
+    ?>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Connexion</legend>
+                <div>
+                    <label for="pseudo">Pseudonyme</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            
+                
+                <input type="submit" name="submit" value="se connecter">
+            </fieldset>
+        </form>
+    <?php  } ?>
+    </section>
+</body>
+</html>

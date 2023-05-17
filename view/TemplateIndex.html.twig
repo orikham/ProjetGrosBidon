@@ -43,7 +43,7 @@
 
             <div id="icones-menus-usercompte">
 
-            <img src="./img/menuBurger.png" alt="logo du menu burger" title="menu">
+            <img id="menu-icon" src="./img/menuBurger.png" alt="logo du menu burger" title="menu">
             <img src="./img/userIcone.png" alt="logo du menu user" title="mon Compte">
 
             </div>
@@ -91,12 +91,9 @@
 
 
 
-    {% block content %}
-    
-      
+    {% block content %}{% endblock %}
 
-      
-     
-    {% endblock %}
+    {% block javascript %} <script> src="../js/menus.js" {% endblock %}
+
 </body>
 </html>

@@ -1,0 +1,22 @@
+<?php
+    if (!isset($_SESSION['session'])) {
+    ?>
+        <form action="index.php" method="POST">
+            <fieldset>
+                <legend>Connexion</legend>
+                <div>
+                    <label for="pseudo">Pseudonyme</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Reset/Connect</legend>
+                <input type="reset" name="reset" value="je repars">
+                <input type="submit" name="submit" value="gigot">
+            </fieldset>
+        </form>
+    <?php  } ?>
