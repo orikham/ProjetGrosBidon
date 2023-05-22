@@ -1,5 +1,5 @@
 <?php
-abstract class NewUser{
+ class NewUser{
     private $pseudo;
 
     private $password;

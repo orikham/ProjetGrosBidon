@@ -17,7 +17,7 @@ class UserModel extends ConnexionDb
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         $dbgrosbidon = $this->getDb();
-        $stmt = $dbgrosbidon->prepare("INSERT INTO `user` (`pseudo`, `password`, `mail`, `birthdate`) VALUES (?, ?, ?, ?)");
+        $stmt = $dbgrosbidon->prepare("INSERT INTO `user` (`pseudo`, `password`, `mail`, `birthdate`) VALUES ($pseudo, $hashedPassword, $mail, $birthdate)");
         $stmt->execute([$pseudo, $hashedPassword, $mail, $birthdate]);
     }
 }

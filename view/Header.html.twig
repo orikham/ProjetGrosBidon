@@ -1,0 +1,79 @@
+{% extends "TemplateIndex.html.twig" %}
+
+
+
+{% block title %}Accueil-GrosBidon{% endblock %}
+
+
+
+
+{% block content %}
+
+<header id="header-gros-bidon">
+
+        <div id="container-header" class="row-limit-size"> 
+
+          <div id="banniere">
+
+            <img src="./assets/img/aTable.png" title="patatable">
+
+            <div id="logo-header">
+              <img src="./assets/img/logoHeader.jpg">
+              <h1> GrosBidon</h1>
+            </div>
+
+            <img src="./assets/img/PatateCrue.png" title="patatable">
+
+          </div>
+        
+
+          <div id="general-navigation">
+
+            <form id="formulaire-search-bar" method="post" action="#">
+
+              <input id="searchbar" type="search" name="searchbar" placeholder="entrez votre recherche içi">
+              <input type="submit" id="search-button" name="search-button" value="go">
+
+            </form>
+
+            <div id="icones-menus-usercompte">
+
+            <img id="menu-icon" src="./assets/img/menuBurger.png" alt="logo du menu burger" title="menu">
+            <img src="./assets/img/userIcone.png" alt="logo du menu user" title="mon Compte">
+
+            </div>
+
+
+
+          
+          
+          
+          </div>
+          
+          <nav id="nav-principal" class="hidden" >
+            <ul>
+              <li><a>amuses-bouches</a></li>
+              <li><a>entrées</a></li>
+              <li><a>plats</a></li>
+              <li><a>desserts</a></li>
+            </ul>
+
+            <ul>
+              <li><a>Boeuf</a></li>
+              <li><a>Porc</a></li>
+              <li><a>Volailles</a></li>
+              <li><a>Poissons</a></li>
+              <li><a>Végétarien</a></li>
+            </ul>
+
+            <ul>
+              <li><a>Baptême</a></li>
+              <li><a>Mariage</a></li>
+              <li><a>Noël</a></li>
+              <li><a>Nouvel An</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {% endblock %}

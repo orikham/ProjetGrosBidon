@@ -1,15 +1,6 @@
+{% extends "TemplateIndex.html.twig" %}
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrosBidon/inscription-connexion</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+{% block content %}
 <body>
     <section id="access-mon-compte" class="row-limit-size">
     <form action="" method="POST">
@@ -36,10 +27,15 @@
             <input type="submit" name="submit" value="inscription">
         </fieldset>
     </form>
+{% endblock %}
 
+{% block content %}
     <?php
     if (!isset($_SESSION['session'])) {
     ?>
+
+
+
         <form action="" method="POST">
             <fieldset>
                 <legend>Connexion</legend>
@@ -58,5 +54,6 @@
         </form>
     <?php  } ?>
     </section>
+    {% endblock %}
 </body>
 </html>

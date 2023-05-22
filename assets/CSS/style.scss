@@ -148,8 +148,12 @@ h1 {
             justify-content: space-evenly;
             margin: 0 auto;
             background-color: $creamColor ;
-            visibility: hidden;
+            
 
+        }
+
+        &>.hidden{
+            visibility: hidden;
         }
     }
 
@@ -168,7 +172,7 @@ h1 {
     &>form{
         max-width: 500px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: $titleh1;
     padding: 20px;
     border-radius: 10px;
     margin: 50px auto;

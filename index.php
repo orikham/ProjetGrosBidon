@@ -9,6 +9,7 @@ $router = new AltoRouter();
 $router->setBasePath('/projet/projetGrosBidon');
 
 $router->map( 'GET', '/', 'HomeController#TemplateIndex', 'home' );
+$router->map( 'POST', '/', 'UserController#registerUser', 'account' );
 
 
 $match = $router->match();
