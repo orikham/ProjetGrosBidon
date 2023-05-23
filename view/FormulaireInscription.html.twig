@@ -1,7 +1,8 @@
 {% extends "TemplateIndex.html.twig" %}
 
+{% block title %}GrosBidon/inscription connexion{% endblock %}
+
 {% block content %}
-<body>
     <section id="access-mon-compte" class="row-limit-size">
     <form action="" method="POST">
         <fieldset>
@@ -20,16 +21,14 @@
             </div>
             <div>
                 <label for="birthdate">date de naissance</label>
-                <input type="date" name="biethdate" id="birthdate">
+                <input type="date" name="birthdate" id="birthdate">
             </div>
        
             
             <input type="submit" name="submit" value="inscription">
         </fieldset>
     </form>
-{% endblock %}
 
-{% block content %}
     <?php
     if (!isset($_SESSION['session'])) {
     ?>
@@ -54,6 +53,6 @@
         </form>
     <?php  } ?>
     </section>
-    {% endblock %}
+{% endblock %}
 </body>
 </html>

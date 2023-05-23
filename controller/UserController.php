@@ -25,7 +25,7 @@ class UserController extends Controller
             $userModel = new UserModel();
             $userModel->createUser($userData);
 
-            header('Location: MonCompte.html.twig');
+            header('Location: ./view/MonCompte.html.twig');
             exit;
         }
     }

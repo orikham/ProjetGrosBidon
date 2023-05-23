@@ -9,12 +9,12 @@ $router = new AltoRouter();
 $router->setBasePath('/projet/projetGrosBidon');
 
 $router->map( 'GET', '/', 'HomeController#TemplateIndex', 'home' );
-$router->map( 'POST', '/', 'UserController#registerUser', 'account' );
+$router->map( 'POST', '/', 'HomeController#RegistrationLogin', 'account' );
 
 
 $match = $router->match();
 
-
+var_dump($match);
 
 if(is_array($match)){
     list($controller, $action) = explode('#', $match['target']);

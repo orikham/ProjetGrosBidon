@@ -1,4 +1,4 @@
-{% set base = 'Projet/ProjetGrosBidon/assets/' %}
+{% set style = '/Projet/ProjetGrosBidon/assets/' %}
 
 <!DOCTYPE html>
   <html lang="en">
@@ -8,16 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
    <title>{% block title %}{% endblock %}</title>
-   <link rel="stylesheet" href="{{ style }}CSS/style.css">
+   <link rel="stylesheet" href="{{ style }}/CSS/style.css">
 </head>
 <body>
    
-      {% block content %}
+      {% include "Header.html.twig" %}
 
-        
-
-
-      {% endblock %}
+      {% block content %}{% endblock %}
       
       
    
@@ -28,8 +25,7 @@
 
     
 
-      {% block javascript %}
-          <script src="{{('/assets/js/menus.js') }}"></script>
-        {% endblock %}
+       {% block javascript %}{% endblock %}
+        <script src="{{ style }}js/menus.js"></script> 
 </body>
 </html>
