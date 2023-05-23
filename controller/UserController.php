@@ -7,7 +7,18 @@ class UserController extends Controller
 {
     public function registerUser()
     {
+        
+
+
+
+
         if (isset($_POST['submit'])) {
+
+            global $router;
+            
+            $model = new UserModel();
+
+
             $pseudo = $_POST['pseudo'];
             $password = $_POST['password'];
             $mail = $_POST['mail'];
@@ -21,12 +32,12 @@ class UserController extends Controller
             ];
 
             
+            
+            $model->createUser($userData);
+            $link = $router->generate('account');
 
-            $userModel = new UserModel();
-            $userModel->createUser($userData);
-
-            header('Location: ./view/MonCompte.html.twig');
-            exit;
+            header('Location:' . $link);
+            exit();
         }
     }
 }

@@ -103,7 +103,7 @@ h1 {
                 width: 700px;
                 height: 250px;
 
-                
+
 
                 &>img {
                     width: 700px;
@@ -117,7 +117,7 @@ h1 {
                     position: relative;
                     top: 0;
                     left: 0;
-                    transform: translate(100px, 150px);
+                    transform: translate(100px, 130px);
 
                 }
 
@@ -131,52 +131,65 @@ h1 {
                     position: relative;
                     align-items: flex-end;
 
-                    &>#formulaire-search-bar{
+                    &>#formulaire-search-bar {
                         width: 300px;
                         display: flex;
                         margin: 10px;
-                        
-                        &>#searchbar{
+                        flex-direction: row;
+                        justify-content: space-evenly;
+
+                        &>#searchbar {
                             width: 300px;
-                            height: 25px;
+                            height: 60px;
                             border-radius: 150px;
                             border: 0;
                             padding-left: 10px;
 
-                            
+
                         }
 
-                        &>#search-button{
-                            
+                        &>#search-button {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 100%;
+
+                            &>img {
+                                width: 40px;
+                                height: 40px;
+                                cursor: pointer;
+
+                            }
+
+
                         }
-                        
-                        
+
+
 
                     }
-                    
-        
-                    &>#icones-menus-usercompte{
-                       
-        
+
+
+                    &>#icones-menus-usercompte {
+
+
                         &>#menu-icon {
                             width: 60px;
                             height: 60px;
                             cursor: pointer;
                             margin-right: 10px;
-                          }
-        
-                        &>#account{
+                        }
+
+                        &>#account {
                             width: 60px;
                             height: 60px;
                             cursor: pointer;
-                            
+
                         }
                     }
                 }
             }
         }
 
-        
+
 
         &>#nav-principal {
             max-width: 700px;
@@ -186,11 +199,11 @@ h1 {
             justify-content: space-evenly;
             margin: 0 auto;
             background-color: $creamColor ;
-            
+
 
         }
 
-        &>.hidden{
+        &>.hidden {
             visibility: hidden;
         }
     }
@@ -203,17 +216,17 @@ h1 {
 
 /*****formulaire d'inscription*****/
 
-#acces-mon-compte{
+#acces-mon-compte {
     width: 100%;
     display: flex;
 
-    &>form{
+    &>form {
         max-width: 500px;
-    width: 100%;
-    background-color: $titleh1;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 50px auto;
-    box-shadow: 2px 2px 10px #666;
+        width: 100%;
+        background-color: $titleh1;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 50px auto;
+        box-shadow: 2px 2px 10px #666;
     }
 }

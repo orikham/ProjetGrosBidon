@@ -1,6 +1,6 @@
 <?php
 
-require_once 'ConnexionDb.php';
+
 require_once 'NewUser.php';
 
 class UserModel extends ConnexionDb

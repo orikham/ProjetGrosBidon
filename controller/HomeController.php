@@ -10,9 +10,9 @@ class HomeController extends Controller{
     }
 
     public function RegistrationLogin(){
-        global $router;
+        
 
-        $link = $router->generate('account');
+        
 
         echo self::getTwig()->render('FormulaireInscription.html.twig');
 
