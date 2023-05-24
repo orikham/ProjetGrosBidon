@@ -50,25 +50,25 @@ class UserController extends Controller
         if(!$_POST){
             echo self::getRender('FormulaireInscription.html.twig', []);
         } else {
-            $id = $_POST[''];
+            $mail = $_POST['mail'];
             
 
             $model = new UserModel();
-            $user = $model->getUserByUserID($id);
+            $user = $model->getUserByUserID($mail);
             
             if($user){
                 $password = $_POST['password'];
 
                if(password_verify($password, $user->getPassword()))
                 {
-                    $_SESSION['id'] = $user->getId();
+                    $_SESSION['mail'] = $user->getMail();
                     $_SESSION['pseudo'] = $user->getPseudo();
 
 
                }
             } else{
                 $message = "identifiant / mot de passe incorrect !!!!!!!!!!!";
-                echo self::getTwig()->render('FormulaireInscription.html.twig', ['message' => $message]);
+                echo self::getRender('FormulaireInscription.html.twig', ['message' => $message]);
             }
         }
 

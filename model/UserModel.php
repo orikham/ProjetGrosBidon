@@ -27,10 +27,10 @@ class UserModel extends ConnexionDb
 
     //connexion
 
-    public function getUserByUserID(Int $id)
+    public function getUserByUserID(String $mail)
     {
-        $req = $this->getDb()->prepare('SELECT `id_user`, `pseudo`, `password`, `mail`, `birthdate` FROM `user` WHERE `id_user`= :id');
-        $req->bindParam(':id', $id, PDO::PARAM_INT);
+        $req = $this->getDb()->prepare('SELECT `id_user`, `pseudo`, `password`, `mail`, `birthdate` FROM `user` WHERE `mail`= :mail');
+        $req->bindParam('mail', $mail, PDO::PARAM_STR);
         $req->execute();
         return $req->rowCount() === 1 ? new NewUser($req->fetch(PDO::FETCH_ASSOC)) : false;
         
