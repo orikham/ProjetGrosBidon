@@ -16,7 +16,7 @@ $router->map( 'GET', '/logout', 'UserController#logout', 'logout' );
 
 $match = $router->match();
 
-var_dump($match);
+//var_dump($match);
 
 if(is_array($match)){
     list($controller, $action) = explode('#', $match['target']);
