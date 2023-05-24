@@ -1,41 +1,49 @@
 {% extends "TemplateIndex.html.twig" %}
 
+{% set style = '/Projet/ProjetGrosBidon/assets/' %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ style }}/CSS/style.css">
+{% endblock %}
+
+
 {% block title %}GrosBidon/inscription connexion{% endblock %}
 
 {% block content %}
+{% if message %}
+    <p>{{message}}</p>
+    {% endif %}
     <section id="access-mon-compte" class="row-limit-size">
-    <form action="" method="POST">
-        <fieldset>
-            <legend>Inscription</legend>
-            <div>
-                <label for="pseudo">Pseudonyme</label>
-                <input type="text" name="pseudo" id="pseudo">
-            </div>
-            <div>
-                <label for="password">Mot de passe</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div>
-                <label for="mail">Votre mail</label>
-                <input type="E-mail" name="mail" id="mail">
-            </div>
-            <div>
-                <label for="birthdate">date de naissance</label>
-                <input type="date" name="birthdate" id="birthdate">
-            </div>
-       
-            
-            <input type="submit" name="submit" value="inscription">
-        </fieldset>
-    </form>
+        <form action="register" method="POST">
+            <fieldset>
+                <legend>Inscription</legend>
+                <div>
+                    <label for="pseudo">Pseudonyme</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="mail">Votre mail</label>
+                    <input type="E-mail" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="birthdate">date de naissance</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+        
+                
+                <input type="submit" name="submit" value="inscription">
+            </fieldset>
+        </form>
 
-    <?php
-    if (!isset($_SESSION['session'])) {
-    ?>
+        
 
 
 
-        <form action="" method="POST">
+        <form action="login" method="POST">
             <fieldset>
                 <legend>Connexion</legend>
                 <div>
@@ -51,8 +59,6 @@
                 <input type="submit" name="submit" value="se connecter">
             </fieldset>
         </form>
-    <?php  } ?>
+       
     </section>
 {% endblock %}
-</body>
-</html>

@@ -15,5 +15,5 @@ return array(
     'NewUser' => $baseDir . '/class/NewUser.php',
     'Recipe' => $baseDir . '/class/Recipe.php',
     'UserController' => $baseDir . '/controller/UserController.php',
-    'UserModel' => $baseDir . '/model/InscriptionSite.php',
+    'UserModel' => $baseDir . '/model/UserModel.php',
 );

@@ -1,5 +1,8 @@
 <?php
  class NewUser{
+
+    private $id;
+
     private $pseudo;
 
     private $password;
@@ -31,6 +34,10 @@
 
     //GETTERS
 
+    public function getId(){
+        return $this->id;
+    }
+
     public function getPseudo(){
         return $this->pseudo;
     }
@@ -49,23 +56,27 @@
 
     //SETTERS
 
+    public function setId(Int $id){
+        $this->id = $id;
+        
+    }
     
     public function setPseudo(String $pseudo){
         $this->pseudo = $pseudo;
         
     }
 
-    public function setTitle(String $password){
+    public function setPassword(String $password){
         $this->password = $password;
         
     }
 
-    public function setExtract(String $mail){
+    public function setMail(String $mail){
         $this->mail = $mail;
         
     }
 
-    public function setThumbnail(String $birthdate){
+    public function setBirthdate(String $birthdate){
         $this->birthdate = $birthdate;
         
     }

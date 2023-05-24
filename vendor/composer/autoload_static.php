@@ -48,7 +48,7 @@ class ComposerStaticInit1e25deae21db4b1d20de71f10bedfaf2
         'NewUser' => __DIR__ . '/../..' . '/class/NewUser.php',
         'Recipe' => __DIR__ . '/../..' . '/class/Recipe.php',
         'UserController' => __DIR__ . '/../..' . '/controller/UserController.php',
-        'UserModel' => __DIR__ . '/../..' . '/model/InscriptionSite.php',
+        'UserModel' => __DIR__ . '/../..' . '/model/UserModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
