@@ -8,39 +8,33 @@ class UserController extends Controller
     public function registerUser()
     {
         
-        if (isset($_POST['submit'])) {
-
-            global $router;
-            
-            $model = new UserModel();
-
-
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $pseudo = $_POST['pseudo'];
             $password = $_POST['password'];
             $mail = $_POST['mail'];
             $birthdate = $_POST['birthdate'];
-
+    
             $userData = [
                 'pseudo' => $pseudo,
                 'password' => $password,
                 'mail' => $mail,
                 'birthdate' => $birthdate
             ];
-
-            
-            
+    
+            $model = new UserModel();
             $model->createUser($userData);
-            $link2 = $router->generate('register');
-           
-            echo self::getRender('FormulaireInscription.html.twig',[]);
-            
-            exit();
-        }else{
-            echo self::getRender('FormulaireInscription.html.twig', []);
+    
+            exit(); // Terminer l'exécution après la création de l'utilisateur
+        } else {
+            // Afficher le formulaire d'inscription
+            $this->setRender('FormulaireInscription.html.twig', []);
         }
+        
 
         
     }
+
+
 
 
 

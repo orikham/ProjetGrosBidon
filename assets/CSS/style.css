@@ -137,6 +137,32 @@ h1 {
   visibility: hidden;
 }
 
+.carousel {
+  position: relative;
+  width: 25%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  margin: 25px auto;
+}
+.carousel > .carouselItem {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.carousel > .carouselItem > img {
+  width: 150px;
+  height: 150px;
+}
+.carousel > .carouselItem.active {
+  opacity: 1;
+}
+
 /**************partie mon compte***************/
 /*****formulaire d'inscription*****/
 #acces-mon-compte {
