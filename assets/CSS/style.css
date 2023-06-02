@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Cookie Dough";
   src: url(../font/Cookie\ Dough.otf);
@@ -95,23 +96,28 @@ h1 {
   margin: 10px;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: flex-end;
 }
 #header-gros-bidon > #container-header > #banniere > #logo-header > #general-navigation > #formulaire-search-bar > #searchbar {
   width: 300px;
-  height: 60px;
+  height: 30px;
   border-radius: 150px;
   border: 0;
   padding-left: 10px;
 }
 #header-gros-bidon > #container-header > #banniere > #logo-header > #general-navigation > #formulaire-search-bar > #search-button {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
+  background-color: #456b01;
+  border: 0;
 }
 #header-gros-bidon > #container-header > #banniere > #logo-header > #general-navigation > #formulaire-search-bar > #search-button > img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+  background-color: #456b01;
+  border-radius: 100%;
 }
 #header-gros-bidon > #container-header > #banniere > #logo-header > #general-navigation > #icones-menus-usercompte > #menu-icon {
   width: 60px;
@@ -137,30 +143,89 @@ h1 {
   visibility: hidden;
 }
 
-.carousel {
-  position: relative;
-  width: 25%;
-  height: 200px;
-  overflow: hidden;
+/**************** slider de presentation des dernier recipe ajouter par l'admin **********************/
+#news {
+  max-width: 1400px;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   margin: 25px auto;
 }
-.carousel > .carouselItem {
-  position: absolute;
-  top: 25px;
-  left: 0;
+#news > .carousel {
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 50px;
+}
+#news > .carousel > .carousel-content {
+  display: flex;
   width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  /* Modifier la largeur en fonction du nombre d'items */
+  transition: transform 2s linear;
+  /* Modifier la durée de transition en 20 secondes */
+  animation: scroll 200s infinite;
+  /* Modifier la durée de l'animation en 20 secondes */
+}
+#news > .carousel > .carousel-content > .carouselItem {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.carousel > .carouselItem > img {
-  width: 150px;
-  height: 150px;
+#news > .carousel > .carousel-content > .carouselItem > img {
+  width: 300px;
+  height: 200px;
 }
-.carousel > .carouselItem.active {
-  opacity: 1;
+#news > .carousel > .carousel-content > .carouselItem > p {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: #f9cda6;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  16.66% {
+    transform: translateX(-100%);
+  }
+  33.33% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  66.66% {
+    transform: translateX(-400%);
+  }
+  83.33% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#news > #newsletter {
+  width: 300px;
+  background-color: black;
+  border-radius: 100%;
+}
+#news > #newsletter > img {
+  width: 300px;
+  height: 200px;
+  border-radius: 150px 150px 0 0;
+}
+#news > #newsletter > #para {
+  width: 300px;
+  height: 100px;
+  border-radius: 0 0 150px 150px;
+  background-color: #f9cda6;
+}
+#news > #newsletter > #para > p {
+  width: 300px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 /**************partie mon compte***************/
@@ -168,14 +233,15 @@ h1 {
 #acces-mon-compte {
   width: 100%;
   display: flex;
+  flex-direction: row;
 }
 #acces-mon-compte > form {
   max-width: 500px;
-  width: 100%;
+  width: 50%;
   background-color: #456b01;
   padding: 20px;
   border-radius: 10px;
   margin: 50px auto;
   box-shadow: 2px 2px 10px #666;
-  color: 0;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
